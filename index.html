@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HomeWork8</title>
+  </head>
+  <body>
+    <div class="addUserContainer">
+      <div class="users"></div>
+      <h3>Join The App</h3>
+        <label for="username">Enter User Name:</label><br />
+        <input type="text" id="username" name="username" placeholder="user name" /><br />
+        <button id="addUserBtn">Add User</button>
+      </div>
+    </div>
+    <div class="usersContainer">
+      <div class="appUsersDiv">
+        <h3>App Users:</h3>
+        <p id="appUsersP"></p>
+      </div>
+    </div>
+    <div class="realationsContainer">
+      <h3>Follow/Get Followed By</h3>
+      <label for="firstUser">Choose User:</label><br />
+      <input type="text" id="firstUser" name="firstUser" placeholder="Example:user1,user2,..." /><br />
+      <label for="action">Choose Action:</label><br />
+      <select id="action">
+        <option value="Follow">Follow</option>
+        <option value="GetFollowedBy">Get Followed By</option>
+      </select><br />
+      <label for="secondUser">Choose User:</label><br />
+      <input type="text" id="secondUser" name="secondUser" placeholder="Example:user1,user2,..." /><br />
+      <button id="relBtn">Submit</button>
+    </div>
+    <div class="messageContainer">
+      <h3>Message Sending To Followers</h3>
+      <label for="sender">Choose Sending User:</label><br />
+      <input type="text" id="sender" name="sender" placeholder="Example:user1,user2,..." /><br />
+      <label for="message">Write A Message:</label><br />
+      <textarea id="message" name="message" rows="4" placeholder="type your message"></textarea><br />
+      <button id="sendBtn">Send</button>
+    </div>
+    <div class="messageContainer">
+      <h3>Message Reading</h3>
+      <label for="reader">Choose Reading User:</label><br />
+      <input type="text" id="reader" name="sender" placeholder="Example:user1,user2,..." /><br />
+      <button id="readBtn">Read</button>
+      <p id="messagesReading"></p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
